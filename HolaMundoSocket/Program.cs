@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,6 +22,19 @@ namespace HolaMundoSocket
             {
                 //OK puede conectar
                 Console.WriteLine("Servidor Iniciado");
+                while (true)
+                {
+                    Console.WriteLine("Esperando Cliente");
+                    Socket socketCliente = servidor.ObtenerCliente();
+                    //Construir el mecanismo para escribir y leer
+                    ClienteCom cliente = new ClienteCom(socketCliente);
+                    //aqui esta el protocolo de comunicacion, ambos deben conocerlo
+                    cliente.Escribir("Hola Mundo cliente, dime tu nombre???");
+                    string respuesta = cliente.Leer();
+                    Console.WriteLine("El cliente mando: {0}", respuesta);
+                    cliente.Escribir("Hasta la vista bi be" + respuesta);
+                    cliente.Desconectar();
+                }
 
             }
             else
@@ -29,4 +43,5 @@ namespace HolaMundoSocket
             }
         }
     }
+    //<CR><LF>
 }

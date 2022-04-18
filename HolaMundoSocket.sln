@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.64
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundoSocket", "HolaMundoSocket\HolaMundoSocket.csproj", "{DB52DA01-A365-421A-9C7E-0FF017023E92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteHolaMundoS", "ClienteHolaMundoS\ClienteHolaMundoS.csproj", "{FBD4ECC2-88FC-4EF8-9F04-C27A80F3B551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DB52DA01-A365-421A-9C7E-0FF017023E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB52DA01-A365-421A-9C7E-0FF017023E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB52DA01-A365-421A-9C7E-0FF017023E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD4ECC2-88FC-4EF8-9F04-C27A80F3B551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD4ECC2-88FC-4EF8-9F04-C27A80F3B551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD4ECC2-88FC-4EF8-9F04-C27A80F3B551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD4ECC2-88FC-4EF8-9F04-C27A80F3B551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

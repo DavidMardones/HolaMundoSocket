@@ -32,7 +32,7 @@ namespace HolaMundoSocket
                     cliente.Escribir("Hola Mundo cliente, dime tu nombre???");
                     string respuesta = cliente.Leer();
                     Console.WriteLine("El cliente mando: {0}", respuesta);
-                    cliente.Escribir("Hasta la vista bi be" + respuesta);
+                    cliente.Escribir("Hasta la vista " + respuesta);
                     cliente.Desconectar();
                 }
 
